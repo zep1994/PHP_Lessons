@@ -8,25 +8,19 @@
 <body>
 
     <?php
-      //create a variable
-      $characterName = "Thomas";
-      $characterAge = 35;
 
-      //Echo will write out to page
-      echo "<h1>$characterName's site</h1>";
-      //can change variable in the middle of script
-      $characterAge = 5;
-      echo "<p>Here is his age: $characterAge<br />";
+      //CREATE A FORM
 
-      //DATA TYPES
-      $phrase = "";
 
-      //MANIPULATE STRING
-      $phrase = "Tom is a man who says a lot of things";
-      // echo strtolower($phrase);
-      // echo strlen("Tom is a man who s");
-      echo substr($phrase, 17);
+      echo htmlspecialchars($_POST['name']);
+
 
      ?>
+
+     <form action="site.php" method="post">
+        <p>Your name: <input type="text" name="name" /></p>
+        <p>Your age: <input type="text" name="age" /></p>
+        <p><input type="submit" /></p>
+     </form>
 </body>
 </html>
