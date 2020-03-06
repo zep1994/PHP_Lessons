@@ -8,16 +8,15 @@
 <body>
 
   <!-- //CREATE A FORM -->
-  <form action="site.php" method="post">
-     <p>Your name: <input type="text" name="name" /></p>
-     <p>Your age: <input type="text" name="age" /></p>
+  <form action="site.php" method="get">
+     Num1: <input type="number" name="num1" />
+     Num2: <input type="number" name="num2" />
      <p><input type="submit" /></p>
   </form>
 
     <?php
 
-      //echo htmlspecialchars($_POST['name']);
-      echo $_POST["name"];
+      Answer: echo $_GET["num1"] + $_GET["num2"];
 
      ?>
 
