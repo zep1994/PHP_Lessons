@@ -7,20 +7,20 @@
 </head>
 <body>
 
+  <!-- //CREATE A FORM -->
+  <form action="site.php" method="post">
+     <p>Your name: <input type="text" name="name" /></p>
+     <p>Your age: <input type="text" name="age" /></p>
+     <p><input type="submit" /></p>
+  </form>
+
     <?php
 
-      //CREATE A FORM
-
-
-      echo htmlspecialchars($_POST['name']);
-
+      //echo htmlspecialchars($_POST['name']);
+      echo $_POST["name"];
 
      ?>
 
-     <form action="site.php" method="post">
-        <p>Your name: <input type="text" name="name" /></p>
-        <p>Your age: <input type="text" name="age" /></p>
-        <p><input type="submit" /></p>
-     </form>
+
 </body>
 </html>
