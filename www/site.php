@@ -9,14 +9,17 @@
 
   <!-- //CREATE A FORM -->
   <form action="site.php" method="get">
-     Num1: <input type="number" name="num1" />
-     Num2: <input type="number" name="num2" />
+     Adjective: <input type="text" name="adj1" />
+     Noun: <input type="text" name="noun" />
+     Plural Noun: <input type="text" name="pnoun" />
+     Person in Room: <input type="text" name="pir" />
+     Adjective: <input type="text" name="adj2" />
      <p><input type="submit" /></p>
   </form>
 
     <?php
 
-      Answer: echo $_GET["num1"] + $_GET["num2"];
+      
 
      ?>
 
